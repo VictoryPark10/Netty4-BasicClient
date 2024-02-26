@@ -17,25 +17,25 @@ public class BasicClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
         super.channelRegistered(ctx);
-        log.info("Client registered to server");
+        log.info("Client is registered to server");
     }
 
     @Override
     public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
         super.channelUnregistered(ctx);
-        log.warn("Client is registered at server");
+        log.warn("Client is unregistered at server");
     }
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
-        log.info("Client's channel status is 'Active'");
+        log.info("Client's channel status is 'ACTIVE' !");
     }
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         super.channelInactive(ctx);
-        log.warn("Client's channel status is 'Inactive'");
+        log.warn("Client's channel status is 'INACTIVE' !");
     }
 
     @Override

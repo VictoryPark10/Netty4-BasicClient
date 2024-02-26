@@ -31,3 +31,4 @@ bin/
 ### custom ###
 libs/
 libs/**
+.idea
